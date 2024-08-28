@@ -115,8 +115,15 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     method: 'POST',
     body: formData
   })
-  .then(response => response.text())
+  .then(response => {
+    console.log('Response:', response);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
   .then(result => {
+    console.log('Result:', result);
     document.getElementById('form-message').innerHTML = result;
     if (result.includes("Thank You")) {
       form.reset();
