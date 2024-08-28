@@ -552,7 +552,12 @@ main { overflow-x: hidden; }
 
 .stats-card > ion-icon { color: var(--color-secondary); }
 
-
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 
 
