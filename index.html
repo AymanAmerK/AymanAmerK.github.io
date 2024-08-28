@@ -100,85 +100,91 @@
       -->
 
       <section class="hero" id="home">
-        <div class="hero-container">
-          <div class="hero-content">
-            <h1 class="hero-title">Assistant Manager and Data Analyst</h1>
-            <p class="hero-text">Leveraging data-driven insights to solve complex business challenges</p>
-            <a href="#contact" class="btn btn-primary">Get in touch</a>
-          </div>
-          <div class="hero-image">
-            <img src="./assets/images/hero-banner.png" alt="Ayman Amer" class="hero-img">
-          </div>
-        </div>
-      
-      <style>
-      .hero {
-        background-color: var(--bg-primary);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 80px 0;
-      }
-      
-      .hero-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-      
-      .hero-content {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      
-      .hero-title {
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--color-primary);
-        margin-bottom: 20px;
-      }
-      
-      .hero-text {
-        font-size: 1.2rem;
-        color: var(--color-secondary);
-        margin-bottom: 30px;
-      }
-      
-      .hero-image {
-        flex: 0 0 40%;
-        max-width: 40%;
-      }
-      
-      .hero-img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
-      
-      @media (max-width: 768px) {
-        .hero-container {
-          flex-direction: column-reverse;
-          text-align: center;
-        }
-      
-        .hero-content, .hero-image {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-      
-        .hero-image {
-          margin-bottom: 40px;
-        }
-      
-        .hero-img {
-          max-width: 250px;
-        }
-      }
-      </style>
+  <div class="hero-container">
+    <div class="hero-image">
+      <img src="path-to-your-image.jpg" alt="Ayman Amer" class="hero-img">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Assistant Manager and Data Analyst</h1>
+      <p class="hero-text">Leveraging data-driven insights to solve complex business challenges</p>
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.hero {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-image {
+  flex: 0 0 40%;
+  max-width: 40%;
+  margin-right: 60px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    flex: 0 0 100%;
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+
+  .hero-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    max-width: 250px;
+  }
+}
+</style>
 
         <ul class="hero-social-list">
           <li>
