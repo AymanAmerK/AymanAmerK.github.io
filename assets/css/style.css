@@ -505,8 +505,10 @@ main { overflow-x: hidden; }
 .stats { padding-block: var(--section-padding); }
 
 .stats-list {
-  display: grid;
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .stats-card {
@@ -551,13 +553,6 @@ main { overflow-x: hidden; }
 }
 
 .stats-card > ion-icon { color: var(--color-secondary); }
-
-.stats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 
 
