@@ -103,3 +103,27 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var formData = new FormData(form);
+  
+  fetch(form.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(result => {
+    document.getElementById('form-message').innerHTML = result;
+    if (result.includes("Thank You")) {
+      form.reset();
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    document.getElementById('form-message').innerHTML = 'An error occurred. Please try again later.';
+  });
+});
