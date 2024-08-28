@@ -24,30 +24,30 @@ Ionicon
 ## Colors
 
 ``` css
---raw-seinna: hsl(24, 74%, 58%);
---sizzling-sunrise: hsl(51, 95%, 54%);
---scarlet: hsl(13, 96%, 47%);
---black: hsl(0, 0%, 0%);
---white: hsl(0, 0%, 100%);
+--primary-blue: #1589EE;
+--secondary-blue: #0070D2;
+--dark-blue: #032D60;
+--light-blue: #E3F3FF;
+--white: #FFFFFF;
+--light-gray: #F3F3F3;
+--dark-gray: #3E3E3C;
 ```
 
 ## Typography
 
 ``` css
 --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
---ff-poppins: 'Poppins', sans-serif;
---ff-roboto: 'Roboto', sans-serif;
-
---fs-1: 2rem;
---fs-2: calc(1.813rem + 1vw);
---fs-3: calc(1.313rem + 1vw);
---fs-4: 1.4rem;
---fs-5: 1rem;
---fs-6: 0.813rem;
---fs-7: 0.75rem;
-
---fw-400: 400;
---fw-700: 700;
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
+  --fs-1: 2rem;
+  --fs-2: calc(1.813rem + 1vw);
+  --fs-3: calc(1.313rem + 1vw);
+  --fs-4: 1.4rem;
+  --fs-5: 1rem;
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+  --fw-400: 400;
+  --fw-700: 700;
 ```
 
 ## Transition
@@ -76,25 +76,23 @@ Ionicon
 ### Dark Mode
 
 ``` css
---bg-primary: hsl(0, 0%, 12%);
---bg-secondary: hsl(0, 0%, 19%);
---color-primary: hsl(0, 0%, 100%);
---color-secondary: hsl(0, 0%, 62%);
---card-shadow: hsla(0, 0%, 0%, 0.4);
---input-bg: hsl(0, 0%, 16%);
-
---shadow-1: 10px 10px 40px var(--card-shadow);
+--bg-primary: var(--dark-blue);
+  --bg-secondary: var(--secondary-blue);
+  --color-primary: var(--white);
+  --color-secondary: var(--light-blue);
+  --card-shadow: hsla(0, 0%, 0%, 0.4);
+  --input-bg: var(--dark-gray);
+  --shadow-1: 10px 10px 40px var(--card-shadow);
 ```
 
 ### Light Mode
 
 ``` css
---bg-primary: hsl(0, 0%, 90%);
---bg-secondary: hsl(0, 0%, 100%);
---color-primary: hsl(0, 0%, 12%);
---color-secondary: hsl(0, 0%, 37%);
---card-shadow: hsla(0, 0%, 0%, 0.1);
---input-bg: hsl(0, 0%, 93%);
-
---shadow-1: 10px 10px 40px var(--card-shadow);
+ --bg-primary-light: var(--light-blue);
+  --bg-secondary-light: var(--white);
+  --color-primary-light: var(--dark-blue);
+  --color-secondary-light: var(--secondary-blue);
+  --card-shadow-light: hsla(0, 0%, 0%, 0.1);
+  --input-bg-light: var(--light-gray);
+  --shadow-1-light: 10px 10px 40px var(--card-shadow-light);
 ```
