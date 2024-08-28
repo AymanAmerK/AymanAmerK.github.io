@@ -693,71 +693,75 @@ main { overflow-x: hidden; }
 
 
 /*-----------------------------------*\
- * #PROJECT
+ * #EXPERIENCE
 \*-----------------------------------*/
-
-.project { padding-block: var(--section-padding); }
-
-.project-list > li { margin-bottom: 25px; }
-
-.project-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius-12);
-  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+.experience {
+  padding-block: var(--section-padding);
 }
 
-.project-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  transition: var(--transition-1);
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.project-card:is(:hover, :focus)::after {
-  background: hsla(0, 0%, 100%, 0.1);
-  backdrop-filter: blur(0.5px);
-}
-
-.project-card .card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-}
-
-.project-card .card-title { margin-bottom: 10px; }
-
-.project-card :is(.card-title, .publish-date) {
-  background: var(--bg-primary);
-  padding: 6px 12px;
-  width: max-content;
-  box-shadow: var(--shadow-1);
-  transform: translateY(20px);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.project-card .publish-date {
-  font-size: var(--fs-6);
+.section-subtitle {
+  font-size: var(--fs-5);
   color: var(--color-primary);
-  transition-delay: 0s;
+  margin-bottom: 10px;
 }
 
-.project-card:is(:hover, :focus) :is(.card-title, .publish-date) {
-  transform: translateY(0);
-  opacity: 1;
+.section-title {
+  font-size: var(--fs-2);
+  margin-bottom: 40px;
 }
 
-.project-card:is(:hover, :focus) .publish-date { transition-delay: 0.1s; }
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
 
-.load-more {
+.experience-item {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-12);
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow-1);
+}
+
+.experience-title {
   font-size: var(--fs-4);
-  color: var(--raw-seinna);
-  text-decoration: underline;
-  margin-inline: auto;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.experience-meta {
+  font-size: var(--fs-6);
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.experience-duties {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-duties li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    padding: 20px;
+  }
+
+  .experience-title {
+    font-size: var(--fs-5);
+  }
+
+  .experience-meta {
+    font-size: var(--fs-7);
+  }
 }
 
 
