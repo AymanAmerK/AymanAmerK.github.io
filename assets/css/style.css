@@ -713,7 +713,7 @@ body.dark_theme .btn-primary {
 
 .about .section-content {
   font-size: 1.1rem; /* Increased font size */
-  line-height: 1.6; /* Increased line spacing */
+  line-height: 1.8; /* Increased line spacing */
 }
 
 .about .btn-group {
@@ -723,12 +723,8 @@ body.dark_theme .btn-primary {
 .about .btn {
   max-width: unset;
   width: 100%;
-  margin-bottom: 15px; /* Added margin between buttons */
 }
 
-.about .btn:last-child {
-  margin-bottom: 0; /* Remove margin from the last button */
-}
 
 .about .section-text {
   margin-bottom: 30px; /* Added margin below the text */
@@ -797,6 +793,10 @@ body.dark_theme .btn-primary {
   align-items: center;
   gap: 15px;
   animation: fadeIn 0.5s ease-out forwards;
+}
+
+.skills-btn {
+  margin-top: 30px; /* Added margin above the button group */
 }
 
 @keyframes fadeIn {
