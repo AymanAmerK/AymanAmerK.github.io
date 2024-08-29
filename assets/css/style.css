@@ -790,7 +790,7 @@ main { overflow-x: hidden; }
 
 .project {
   padding: 60px 0;
-  background-color: var(--white);
+  background-color: var(--bg-secondary);
 }
 
 .project-content {
