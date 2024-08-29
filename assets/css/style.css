@@ -695,72 +695,54 @@ main { overflow-x: hidden; }
 /*-----------------------------------*\
  * #EXPERIENCE
 \*-----------------------------------*/
-.experience {
+.experience { 
   padding-block: var(--section-padding);
 }
 
-.experience-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.section-subtitle {
-  font-size: var(--fs-5);
-  color: var(--color-primary);
-  margin-bottom: 10px;
-}
-
-.section-title {
-  font-size: var(--fs-2);
+.experience-list > li { 
   margin-bottom: 40px;
 }
 
-.experience-list {
-  list-style: none;
-  padding: 0;
-}
-
 .experience-item {
-  background-color: var(--bg-secondary);
-  border-radius: var(--radius-12);
+  background: var(--bg-secondary);
   padding: 30px;
-  margin-bottom: 30px;
+  border-radius: var(--radius-12);
   box-shadow: var(--shadow-1);
 }
 
 .experience-title {
-  font-size: var(--fs-3);
-  color: var(--color-primary);
+  font-size: var(--fs-4);
   margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
 .experience-meta {
-  font-size: var(--fs-4);
-  color: var(--color-text);
+  font-size: var(--fs-5);
+  color: var(--color-secondary);
+  font-weight: var(--fw-700);
   margin-bottom: 15px;
 }
 
 .experience-duties {
   list-style-type: none;
   padding-left: 0;
-}
-
-.experience-duties li {
-  margin-bottom: 12px;
-  line-height: 1.6;
-  text-align: justify;
-  padding-left: 25px;
-  position: relative;
   color: var(--color-text);
 }
 
+.experience-duties li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
+
 .experience-duties li::before {
-  content: "\2022";
-  color: var(--color-primary);
-  font-size: 1.2em;
+  content: "•";
   position: absolute;
   left: 0;
-  top: 0;
+  color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -769,14 +751,17 @@ main { overflow-x: hidden; }
   }
 
   .experience-title {
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
   }
 
   .experience-meta {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
+  }
+
+  .experience-duties li {
+    font-size: var(--fs-7);
   }
 }
-
 
 
 
