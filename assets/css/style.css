@@ -732,18 +732,23 @@ main { overflow-x: hidden; }
   font-size: var(--fs-3);
   color: var(--color-primary);
   margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .experience-meta {
   font-size: var(--fs-4);
   color: var(--color-secondary);
   margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .experience-duties {
   list-style-type: none;
   color: var(--color-secondary);
-  padding-left: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .experience-duties li {
