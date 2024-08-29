@@ -468,7 +468,7 @@ body.active { overflow: hidden; }
     justify-content: center;
     padding: 40px 20px 80px; /* Increased bottom padding */
     position: relative;
-    margin-bottom: 60px; /* Added margin to create space below */
+    margin-bottom: 40px; /* Added margin to create space below */
 }
 
 .hero-container {
@@ -480,8 +480,8 @@ body.active { overflow: hidden; }
 }
 
 .hero-image {
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 30px;
@@ -495,7 +495,7 @@ body.active { overflow: hidden; }
 }
 
 .hero-content {
-    text-align: center;
+    text-align: left;
 }
 
 .hero-title {
