@@ -666,7 +666,7 @@ body.active { overflow: hidden; }
 }
 
 .stats-card .card-title {
-  flex-grow: 1;
+  width: calc(100% - 95px); /* Ensures title adjusts correctly */
   color: var(--raw-seinna);
   text-align: center;
 }
