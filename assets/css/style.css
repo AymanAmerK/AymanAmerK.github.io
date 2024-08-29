@@ -491,15 +491,13 @@ body.active { overflow: hidden; }
     color: var(--color-primary);
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    justify-content: top;
 }
 
 .hero-text {
     font-size: var(--fs-5);
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: 30px;
     line-height: 1.8;
-    justify-content: top;
 }
 
 .btn-primary {
@@ -545,8 +543,8 @@ body.active { overflow: hidden; }
 }
 
 .hero-img {
-    width: 5000px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -575,12 +573,12 @@ body.active { overflow: hidden; }
     .hero-container {
         flex-direction: row;
         justify-content: space-between;
-        align-items: top;
+        align-items: center;
     }
 
     .hero-content {
         text-align: left;
-        max-width: 70%;
+        max-width: 50%;
         padding-right: 20px;
     }
 
@@ -594,8 +592,8 @@ body.active { overflow: hidden; }
     .hero-img {
         width: 100%;
         height: auto;
-        max-width: 800px;
-        max-height: 800px;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .scroll-down {
@@ -619,7 +617,7 @@ body.active { overflow: hidden; }
     }
 
     .hero-container {
-        padding: 0 8px; /* Add some padding to prevent text from touching edges */
+        padding: 0 15px; /* Add some padding to prevent text from touching edges */
     }
 
     .hero-title {
