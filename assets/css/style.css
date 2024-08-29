@@ -736,13 +736,14 @@ main { overflow-x: hidden; }
 
 .experience-meta {
   font-size: var(--fs-4);
-  color: var(--color-text);
+  color: var(--color-secondary);
   margin-bottom: 15px;
 }
 
 .experience-duties {
   list-style-type: none;
-  padding-left: 0;
+  color: var(--color-secondary);
+  padding-left: 30px;
 }
 
 .experience-duties li {
