@@ -455,7 +455,7 @@ body.active { overflow: hidden; }
 
 
 /*-----------------------------------*\
- * #HERO - Updated with Grid Layout
+ * #HERO - Updated with Flexbox Layout
 \*-----------------------------------*/
 
 .hero {
@@ -464,41 +464,24 @@ body.active { overflow: hidden; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px; /* Reduced padding for small screens */
+    padding: 20px; /* Reduced padding */
     position: relative;
 }
 
 .hero-container {
-    display: grid; /* Changed to Grid */
-    grid-template-columns: 1fr; /* Single column layout for small screens */
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Default to column for small screens */
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    gap: 20px; /* Gap between sections */
-    padding: 0; /* Removed extra padding */
-}
-
-/* Image Section Styling */
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    margin: 0 auto;
-}
-
-.hero-img {
-    width: 300px; /* Adjusted size */
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+    padding: 0;
+    align-items: center; /* Center items for small screens */
+    gap: 20px; /* Add gap between content and image */
 }
 
 /* Content Section Styling */
 .hero-content {
     text-align: center;
-    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -553,6 +536,21 @@ body.active { overflow: hidden; }
     color: var(--raw-seinna);
 }
 
+/* Image Section Styling */
+.hero-image {
+    width: 100%; /* Responsive width */
+    display: flex;
+    justify-content: center; /* Center image for small screens */
+    align-items: center;
+}
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Scroll Down Styling */
 .scroll-down {
     position: absolute;
@@ -576,21 +574,24 @@ body.active { overflow: hidden; }
 /* Media queries for large screens */
 @media (min-width: 992px) {
     .hero-container {
-        grid-template-columns: 1fr 1fr; /* Two-column layout for large screens */
-        align-items: center;
-    }
-
-    .hero-image {
-        justify-content: end; /* Align image to the right */
+        flex-direction: row; /* Row layout for large screens */
+        justify-content: space-between; /* Space between text and image */
+        align-items: center; /* Align items vertically */
     }
 
     .hero-content {
-        text-align: left;
-        padding: 0; /* Remove extra padding */
+        text-align: left; /* Align text to the left */
+        max-width: 50%; /* Take half the container */
     }
 
-    .hero-social-list {
-        justify-content: flex-start;
+    .hero-image {
+        justify-content: flex-end; /* Align image to the right */
+        max-width: 40%; /* Adjust width for image */
+    }
+
+    .hero-img {
+        width: 100%; /* Image takes full width of its container */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .scroll-down {
@@ -602,7 +603,7 @@ body.active { overflow: hidden; }
 /* Media queries for small screens */
 @media (max-width: 768px) {
     .hero {
-        padding: 20px; /* Reduced padding */
+        padding: 10px; /* Reduced padding */
     }
 
     .hero-title {
@@ -613,11 +614,12 @@ body.active { overflow: hidden; }
         font-size: var(--fs-6);
     }
 
-    .hero-image img {
+    .hero-img {
         width: 250px;
         height: 250px;
     }
 }
+
 
 
 
