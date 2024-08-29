@@ -706,7 +706,7 @@ main { overflow-x: hidden; }
 
 .section-subtitle {
   font-size: var(--fs-5);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-bottom: 10px;
 }
 
