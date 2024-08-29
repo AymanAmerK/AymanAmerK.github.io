@@ -513,12 +513,12 @@ body {
     font-family: var(--ff-saira-stencil-one), sans-serif;
     font-size: var(--fs-3);
     font-weight: var(--fw-700);
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: 20px;
 }
 
 body.dark_theme .hero-title {
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .hero-text {
