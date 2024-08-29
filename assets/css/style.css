@@ -453,7 +453,7 @@ body.active { overflow: hidden; }
 .navbar-link:is(:hover, :focus)::before { width: 100%; }
 
 
-
+HERO
 
 body {
     font-family: var(--ff-roboto), sans-serif; /* Main theme font */
@@ -468,7 +468,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 20px;
+    padding: 40px 10px;
     border-bottom: 5px solid var(--color-primary); /* Separation line */
     position: relative; /* Make space for scroll arrow */
     overflow: hidden; /* Prevent content overflow */
@@ -485,9 +485,9 @@ body {
 }
 
 .hero-image {
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-right: 40px;
+    flex: 0 0 100%;
+    max-width: 1000%;
+    margin-bottom: 20px;
 }
 
 .hero-img {
@@ -496,7 +496,8 @@ body {
     border-radius: 50%; /* Circular shape */
     box-shadow: var(--shadow-1);
     transition: transform 0.3s ease;
-    margin-top: 0; /* Adjust margin to position properly */
+    margin-top: 0;
+    margin-top: 10px;/* Adjust margin to position properly */
 }
 
 .hero-img:hover {
@@ -513,7 +514,7 @@ body {
     font-family: var(--ff-saira-stencil-one), sans-serif;
     font-size: var(--fs-3); /* Adjusted font size */
     font-weight: var(--fw-700);
-    color: var(--color-primary); /* Dynamic color */
+    color: var(--color-secondary); /* Dynamic color */
     margin-bottom: 20px;
 }
 
