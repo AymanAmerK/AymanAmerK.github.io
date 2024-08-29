@@ -455,7 +455,7 @@ body.active { overflow: hidden; }
 
 
 /*-----------------------------------*\
- * #HERO - Updated
+ * #HERO - Updated with Grid Layout
 \*-----------------------------------*/
 
 .hero {
@@ -464,42 +464,43 @@ body.active { overflow: hidden; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 20px; /* Reduced padding for small screens */
     position: relative;
 }
 
-/* Flexbox layout changes for large screens */
 .hero-container {
-    display: flex;
-    flex-direction: column; /* default flex-direction */
-    align-items: center;
+    display: grid; /* Changed to Grid */
+    grid-template-columns: 1fr; /* Single column layout for small screens */
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px; /* added padding for small screens */
+    gap: 20px; /* Gap between sections */
+    padding: 0; /* Removed extra padding */
 }
 
-/* Image styling */
+/* Image Section Styling */
 .hero-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 30px;
-    flex-shrink: 0; /* prevent image from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    margin: 0 auto;
 }
 
 .hero-img {
-    width: 100%;
-    height: 100%;
+    width: 300px; /* Adjusted size */
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
-/* Text content styling */
+/* Content Section Styling */
 .hero-content {
     text-align: center;
+    padding: 20px;
     max-width: 800px;
-    padding: 20px; /* padding added for smaller screens */
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -518,7 +519,6 @@ body.active { overflow: hidden; }
     line-height: 1.8;
 }
 
-/* Button and social links styling */
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
@@ -553,7 +553,7 @@ body.active { overflow: hidden; }
     color: var(--raw-seinna);
 }
 
-/* Scroll down link styling */
+/* Scroll Down Styling */
 .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -576,22 +576,17 @@ body.active { overflow: hidden; }
 /* Media queries for large screens */
 @media (min-width: 992px) {
     .hero-container {
-        flex-direction: row; /* Row direction for large screens */
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr; /* Two-column layout for large screens */
         align-items: center;
-        padding: 0; /* reset padding for larger screens */
     }
 
     .hero-image {
-        width: 400px;
-        height: 400px;
-        margin-bottom: 0;
-        margin-right: 50px;
+        justify-content: end; /* Align image to the right */
     }
 
     .hero-content {
         text-align: left;
-        padding: 0; /* reset padding for larger screens */
+        padding: 0; /* Remove extra padding */
     }
 
     .hero-social-list {
@@ -607,7 +602,7 @@ body.active { overflow: hidden; }
 /* Media queries for small screens */
 @media (max-width: 768px) {
     .hero {
-        padding: 20px; /* Reduced padding for smaller screens */
+        padding: 20px; /* Reduced padding */
     }
 
     .hero-title {
@@ -618,11 +613,12 @@ body.active { overflow: hidden; }
         font-size: var(--fs-6);
     }
 
-    .hero-image {
+    .hero-image img {
         width: 250px;
         height: 250px;
     }
 }
+
 
 
 
