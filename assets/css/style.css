@@ -457,29 +457,27 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
  * #HERO - Updated with Flexbox Layout
 \*-----------------------------------*/
-
 .hero {
     background-color: var(--bg-primary);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px; /* Reduced padding */
+    padding: 20px;
     position: relative;
 }
 
 .hero-container {
-    display: flex; /* Use Flexbox for layout */
-    flex-direction: column; /* Default to column for small screens */
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    align-items: center; /* Center items for small screens */
-    gap: 20px; /* Add gap between content and image */
+    align-items: center;
+    gap: 20px;
 }
 
-/* Content Section Styling */
 .hero-content {
     text-align: center;
     max-width: 800px;
@@ -510,7 +508,7 @@ body.active { overflow: hidden; }
     text-decoration: none;
     border-radius: var(--radius-4);
     font-weight: var(--fw-700);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -536,22 +534,21 @@ body.active { overflow: hidden; }
     color: var(--raw-seinna);
 }
 
-/* Image Section Styling */
 .hero-image {
-    width: 100%; /* Responsive width */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center image for small screens */
+    justify-content: center;
     align-items: center;
+    order: -1; /* Move image above text on small screens */
 }
 
 .hero-img {
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Scroll Down Styling */
 .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -574,43 +571,53 @@ body.active { overflow: hidden; }
 /* Media queries for large screens */
 @media (min-width: 992px) {
     .hero-container {
-        flex-direction: row; /* Row layout for large screens */
-        justify-content: space-between; /* Space between text and image */
-        align-items: center; /* Align items vertically */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .hero-content {
-        text-align: left; /* Align text to the left */
-        max-width: 50%; /* Take half the container */
-        padding-right: 20px; /* Add padding to separate from image */
+        text-align: left;
+        max-width: 50%;
+        padding-right: 20px;
     }
 
     .hero-image {
-        justify-content: flex-end; /* Align image to the right */
-        max-width: 50%; /* Take half the container */
-        margin-left: auto; /* Push image to the right */
+        justify-content: flex-end;
+        max-width: 50%;
+        margin-left: auto;
+        order: 0; /* Reset order for large screens */
     }
 
     .hero-img {
-        width: 100%; /* Image takes full width of its container */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .scroll-down {
         bottom: 40px;
         right: 40px;
     }
+
+    .hero-title {
+        color: var(--color-secondary); /* Match small screen color in light theme */
+    }
+
+    body.light_theme .btn-primary {
+        color: var(--black); /* Change text color to black in light theme */
+    }
 }
 
 /* Media queries for small screens */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .hero {
-        padding: 10px; /* Reduced padding */
+        padding: 10px;
     }
 
     .hero-container {
-        flex-direction: column; /* Column layout for small screens */
-        align-items: center; /* Center align content */
+        padding: 0 15px; /* Add some padding to prevent text from touching edges */
     }
 
     .hero-title {
@@ -619,11 +626,6 @@ body.active { overflow: hidden; }
 
     .hero-text {
         font-size: var(--fs-6);
-    }
-
-    .hero-img {
-        width: 250px;
-        height: 250px;
     }
 }
 
