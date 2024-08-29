@@ -692,8 +692,9 @@ body {
 /*-----------------------------------*\
  * #ABOUT
 \*-----------------------------------*/
-
-.about { padding-block: var(--section-padding); }
+.about { 
+  padding-block: var(--section-padding); 
+}
 
 .about-banner {
   max-width: 400px;
@@ -701,12 +702,28 @@ body {
   margin-bottom: 80px;
 }
 
+.about .section-content {
+  font-size: 1.1rem; /* Increased font size */
+  line-height: 1.6; /* Increased line spacing */
+}
+
+.about .btn-group {
+  margin-top: 30px; /* Added margin above the button group */
+}
+
 .about .btn {
   max-width: unset;
   width: 100%;
+  margin-bottom: 15px; /* Added margin between buttons */
 }
 
-.about .btn-secondary { margin-bottom: 10px; }
+.about .btn:last-child {
+  margin-bottom: 0; /* Remove margin from the last button */
+}
+
+.about .section-text {
+  margin-bottom: 30px; /* Added margin below the text */
+}
 
 
 
