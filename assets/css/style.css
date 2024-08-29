@@ -732,21 +732,24 @@ main { overflow-x: hidden; }
   font-size: var(--fs-4);
   color: var(--color-primary);
   margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
 .experience-meta {
-  font-size: var(--fs-6);
-  color: var(--color-text);
-  margin-bottom: 15px;
+  font-size: var(--fs-5);
+  color: var(--color-secondary);
+  font-weight: var(--fw-700);
+  margin-bottom: 10px;
 }
 
 .experience-duties {
   list-style-type: disc;
   padding-left: 20px;
+  color: var(--color-text);
 }
 
 .experience-duties li {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   line-height: 1.6;
 }
 
