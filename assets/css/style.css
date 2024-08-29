@@ -453,10 +453,12 @@ body.active { overflow: hidden; }
 .navbar-link:is(:hover, :focus)::before { width: 100%; }
 
 
-HERO
+/*-----------------------------------*\
+ * #HERO
+\*-----------------------------------*/
 
 body {
-    font-family: var(--ff-roboto), sans-serif; /* Main theme font */
+    font-family: var(--ff-roboto), sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -468,11 +470,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 10px;
-    border-bottom: 5px solid var(--color-primary); /* Separation line */
-    position: relative; /* Make space for scroll arrow */
-    overflow: hidden; /* Prevent content overflow */
-    flex-direction: row; /* Image and content side by side */
+    padding: 60px 20px;
+    border-bottom: 5px solid var(--color-primary);
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -485,19 +486,17 @@ body {
 }
 
 .hero-image {
-    flex: 0 0 100%;
-    max-width: 1000%;
-    margin-bottom: 20px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-right: 40px;
 }
 
 .hero-img {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Circular shape */
+    border-radius: 50%;
     box-shadow: var(--shadow-1);
     transition: transform 0.3s ease;
-    margin-top: 0;
-    margin-top: 10px;/* Adjust margin to position properly */
 }
 
 .hero-img:hover {
@@ -507,20 +506,24 @@ body {
 .hero-content {
     flex: 0 0 50%;
     max-width: 50%;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .hero-title {
     font-family: var(--ff-saira-stencil-one), sans-serif;
-    font-size: var(--fs-3); /* Adjusted font size */
+    font-size: var(--fs-3);
     font-weight: var(--fw-700);
-    color: var(--color-secondary); /* Dynamic color */
+    color: var(--color-secondary);
     margin-bottom: 20px;
 }
 
+body.dark_theme .hero-title {
+    color: var(--color-primary);
+}
+
 .hero-text {
-    font-size: var(--fs-5); /* Adjusted font size for better readability */
-    color: var(--color-secondary); /* Dynamic color */
+    font-size: var(--fs-5);
+    color: var(--color-secondary);
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -529,7 +532,7 @@ body {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--raw-seinna);
-    color: var(--black); /* Dark text in light mode */
+    color: var(--black);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -537,7 +540,7 @@ body {
 }
 
 body.dark_theme .btn-primary {
-    color: var(--white); /* Light text in dark mode */
+    color: var(--white);
 }
 
 .btn-primary:hover {
@@ -548,14 +551,14 @@ body.dark_theme .btn-primary {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 30px;
 }
 
 .hero-social-link {
     font-size: 1.5rem;
     color: var(--color-primary);
-    margin: 0 10px;
+    margin-right: 20px;
     transition: color 0.3s ease;
 }
 
@@ -564,31 +567,31 @@ body.dark_theme .btn-primary {
 }
 
 .scroll-down {
-    position: absolute; /* Ensure scroll-down is at the bottom */
+    position: absolute;
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color-primary); /* Dynamic color */
+    color: var(--color-primary);
     text-decoration: none;
-    font-size: var(--fs-6); /* Adjusted font size */
+    font-size: var(--fs-6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .scroll-down::after {
     content: '↓';
-    font-size: var(--fs-4); /* Adjusted arrow size */
+    font-size: var(--fs-4);
     margin-top: 5px;
-    color: var(--color-primary); /* Match theme color */
+    color: var(--color-primary);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center text for smaller screens */
+        flex-direction: column;
+        text-align: center;
     }
 
     .hero-image, .hero-content {
@@ -597,25 +600,33 @@ body.dark_theme .btn-primary {
     }
 
     .hero-image {
-        margin: 0 auto 20px auto; /* Center image with margin */
+        margin: 0 auto 20px auto;
     }
 
     .hero-title {
-        font-size: var(--fs-2); /* Adjust font size */
+        font-size: var(--fs-2);
         margin-bottom: 20px;
     }
 
     .hero-text {
-        font-size: var(--fs-5); /* Adjust text size */
+        font-size: var(--fs-5);
         margin-bottom: 20px;
     }
 
     .btn-primary {
-        margin: 0 auto; /* Center button */
+        margin: 0 auto;
     }
 
     .scroll-down {
-        bottom: 20px; /* Adjust scroll position */
+        bottom: 20px;
+    }
+
+    .hero-social-list {
+        justify-content: center;
+    }
+
+    .hero-social-link {
+        margin: 0 10px;
     }
 }
 
