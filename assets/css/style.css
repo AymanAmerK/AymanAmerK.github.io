@@ -634,7 +634,7 @@ body.active { overflow: hidden; }
 
 
 /*-----------------------------------*\
-  #STATS
+ * #STATS
 \*-----------------------------------*/
 
 .stats {
@@ -642,12 +642,8 @@ body.active { overflow: hidden; }
 }
 
 .stats-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .stats-card {
@@ -659,9 +655,6 @@ body.active { overflow: hidden; }
   border-radius: var(--radius-12);
   box-shadow: var(--shadow-1);
   transition: var(--transition-1);
-  flex: 1;
-  min-width: 280px;
-  max-width: 400px;
 }
 
 .stats-card:is(:hover, :focus) {
@@ -675,7 +668,6 @@ body.active { overflow: hidden; }
   display: grid;
   place-items: center;
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
 .stats-card .card-icon img {
@@ -684,34 +676,26 @@ body.active { overflow: hidden; }
 }
 
 .stats-card .card-title {
-  width: calc(100% - 95px); /* Ensures title adjusts correctly */
+  width: calc(100% - 95px);
   color: var(--raw-seinna);
   text-align: center;
+  font-size: 2.5rem; /* Increased font size for the numbers */
+  line-height: 1;
+  margin: 0; /* Removed margin for a cleaner look */
 }
 
 .stats-card .card-title strong {
   display: block;
   color: var(--color-primary);
-  font-size: 2.5rem;
+  font-size: 1rem; /* Decreased font size for the description */
   line-height: 1.3;
-  margin-top: 5px;
+  margin-top: 5px; /* Spacing between number and text */
 }
 
 .stats-card > ion-icon {
   color: var(--color-secondary);
 }
 
-@media (max-width: 768px) {
-  .stats-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stats-card {
-    width: 100%;
-    max-width: none;
-  }
-}
 
 
 
