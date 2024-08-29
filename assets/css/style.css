@@ -462,7 +462,7 @@ body.active { overflow: hidden; }
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: center;
     padding: 20px;
     position: relative;
 }
@@ -491,6 +491,7 @@ body.active { overflow: hidden; }
     color: var(--color-primary);
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    justify-content: top;
 }
 
 .hero-text {
@@ -498,6 +499,7 @@ body.active { overflow: hidden; }
     color: var(--color-primary);
     margin-bottom: 30px;
     line-height: 1.8;
+    justify-content: top;
 }
 
 .btn-primary {
