@@ -766,6 +766,7 @@ body.dark_theme .btn-primary {
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
+  margin-top: 30px;
 }
 
 .skills-toggle.active::before {
@@ -795,9 +796,6 @@ body.dark_theme .btn-primary {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-.skills-btn {
-  margin-top: 30px; /* Added margin above the button group */
-}
 
 @keyframes fadeIn {
 
