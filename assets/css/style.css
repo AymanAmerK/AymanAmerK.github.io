@@ -455,10 +455,6 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 body {
     font-family: var(--ff-roboto), sans-serif; /* Main theme font */
     margin: 0;
@@ -471,12 +467,12 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 60px 20px;
-    border-bottom: 5px solid var(--color-primary); /* Added border for separation */
+    border-bottom: 5px solid var(--color-primary); /* Separation line */
     position: relative; /* Make space for scroll arrow */
-    overflow: hidden; /* To prevent content overflow */
+    overflow: hidden; /* Prevent content overflow */
+    flex-direction: row; /* Image and content side by side */
 }
 
 .hero-container {
@@ -497,9 +493,10 @@ body {
 .hero-img {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Restore circular shape */
+    border-radius: 50%; /* Circular shape */
     box-shadow: var(--shadow-1);
     transition: transform 0.3s ease;
+    margin-top: 0; /* Adjust margin to position properly */
 }
 
 .hero-img:hover {
@@ -509,20 +506,20 @@ body {
 .hero-content {
     flex: 0 0 50%;
     max-width: 50%;
-    text-align: left; /* Ensure text aligns to the left */
+    text-align: left; /* Align text to the left */
 }
 
 .hero-title {
     font-family: var(--ff-saira-stencil-one), sans-serif;
-    font-size: var(--fs-2);
+    font-size: var(--fs-3); /* Adjusted font size */
     font-weight: var(--fw-700);
-    color: var(--color-primary);
+    color: var(--color-primary); /* Dynamic color */
     margin-bottom: 20px;
 }
 
 .hero-text {
-    font-size: var(--fs-4);
-    color: var(--color-secondary);
+    font-size: var(--fs-5); /* Adjusted font size for better readability */
+    color: var(--color-secondary); /* Dynamic color */
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -566,21 +563,22 @@ body.dark_theme .btn-primary {
 }
 
 .scroll-down {
-    position: absolute; /* Place scroll-down at the bottom */
-    bottom: 60px;
+    position: absolute; /* Ensure scroll-down is at the bottom */
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color-secondary);
+    color: var(--color-primary); /* Dynamic color */
     text-decoration: none;
-    font-size: 1rem; /* Increase font size for better visibility */
+    font-size: var(--fs-6); /* Adjusted font size */
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Center the text */
 }
 
 .scroll-down::after {
     content: '↓';
-    font-size: 1.5rem; /* Increase arrow size */
+    font-size: var(--fs-4); /* Adjusted arrow size */
     margin-top: 5px;
     color: var(--color-primary); /* Match theme color */
 }
@@ -588,8 +586,8 @@ body.dark_theme .btn-primary {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column;
-        text-align: center; /* Center everything on smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text for smaller screens */
     }
 
     .hero-image, .hero-content {
@@ -602,7 +600,7 @@ body.dark_theme .btn-primary {
     }
 
     .hero-title {
-        font-size: var(--fs-1); /* Adjust font size */
+        font-size: var(--fs-2); /* Adjust font size */
         margin-bottom: 20px;
     }
 
@@ -619,6 +617,7 @@ body.dark_theme .btn-primary {
         bottom: 20px; /* Adjust scroll position */
     }
 }
+
 
 
 
