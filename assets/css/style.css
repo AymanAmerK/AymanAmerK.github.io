@@ -631,8 +631,6 @@ body.active { overflow: hidden; }
 
 
 
-
-
 /*-----------------------------------*\
  * #STATS
 \*-----------------------------------*/
@@ -679,22 +677,42 @@ body.active { overflow: hidden; }
   width: calc(100% - 95px);
   color: var(--raw-seinna);
   text-align: center;
-  font-size: 2.5rem; /* Increased font size for the numbers */
-  line-height: 1;
-  margin: 0; /* Removed margin for a cleaner look */
+}
+
+/* Make the numbers larger */
+.stats-card .card-title {
+  font-size: 1rem; /* Base font size for the descriptive text */
+  line-height: 1.3;
 }
 
 .stats-card .card-title strong {
   display: block;
   color: var(--color-primary);
-  font-size: 1rem; /* Decreased font size for the description */
-  line-height: 1.3;
-  margin-top: 5px; /* Spacing between number and text */
+  font-size: 2.5rem; /* Increased font size for the numbers */
+  font-weight: bold; /* Optional: Make it bold */
+  line-height: 1.2;
+  margin-top: 0.3em; /* Adjust spacing */
 }
 
 .stats-card > ion-icon {
   color: var(--color-secondary);
 }
+
+/* Responsive adjustments for better display on smaller screens */
+@media (max-width: 768px) {
+  .stats-list {
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .stats-card .card-title strong {
+    font-size: 2rem; /* Slightly reduce size for smaller screens */
+  }
+
+  .stats-card .card-title {
+    font-size: 0.9rem; /* Decrease descriptive text size */
+  }
+}
+
 
 
 
