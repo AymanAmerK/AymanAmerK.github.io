@@ -716,23 +716,24 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
  * #SKILLS
 \*-----------------------------------*/
-
 .skills { padding-block: var(--section-padding); }
 
-.skills-content { margin-bottom: 50px; }
+.skills-content { 
+  margin-bottom: 50px; 
+}
 
 .skills-toggle {
   background: var(--bg-secondary);
   position: relative;
   width: max-content;
   margin-inline: auto;
+  margin-top: 30px; /* Add space above the toggle */
   display: flex;
   align-items: center;
   padding: 5px;
   border-radius: 100px;
   box-shadow: var(--shadow-1);
   z-index: 1;
-  margin-top: 30px;
 }
 
 .skills-toggle::before {
@@ -746,7 +747,6 @@ body.active { overflow: hidden; }
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
-  margin-top: 30px;
 }
 
 .skills-toggle.active::before {
@@ -774,15 +774,11 @@ body.active { overflow: hidden; }
   align-items: center;
   gap: 15px;
   animation: fadeIn 0.5s ease-out forwards;
-  margin-top: 30px;
 }
 
-
 @keyframes fadeIn {
-
   0% { opacity: 0; }
   100% { opacity: 1; }
-
 }
 
 .skill-card {
@@ -801,7 +797,6 @@ body.active { overflow: hidden; }
   transform: translateY(0);
   opacity: 1;
 }
-
 
 
 
