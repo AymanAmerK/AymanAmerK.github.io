@@ -829,7 +829,7 @@ main { overflow-x: hidden; }
 }
 
 .project-card {
-  background-color: var(--white);
+  background-color: var(--bg-secondary);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
