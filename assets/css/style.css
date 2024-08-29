@@ -480,9 +480,9 @@ body.active { overflow: hidden; }
 }
 
 .hero-image {
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    border-radius: 80%;
     overflow: hidden;
     margin-bottom: 30px;
     box-shadow: var(--shadow-1);
@@ -511,7 +511,7 @@ body.active { overflow: hidden; }
     font-size: var(--fs-5);
     color: var(--color-secondary); /* This will adapt to the theme */
     margin-bottom: 30px;
-    line-height: 1.6;
+    line-height: 1.8;
     max-width: 600px;
 }
 
