@@ -754,7 +754,7 @@ main { overflow-x: hidden; }
 .experience-duties li {
   margin-bottom: 12px;
   line-height: 1.6;
-  text-align: justify;
+  justify-content: center;
   padding-left: 25px;
   position: relative;
   color: var(--color-text);
