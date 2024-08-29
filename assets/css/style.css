@@ -478,7 +478,8 @@ body {
 
 .hero-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* This stacks the elements vertically */
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -486,17 +487,17 @@ body {
 }
 
 .hero-image {
-    flex: 0 0 40%;
+    flex: 0 0 auto;
     max-width: 40%;
-    margin-right: 40px;
+    margin-bottom: 40px; /* Add some space between the image and content */
+    order: 1; /* This places the image on top */
 }
 
-.hero-img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: var(--shadow-1);
-    transition: transform 0.3s ease;
+.hero-content {
+    flex: 0 0 auto;
+    max-width: 100%;
+    text-align: center; /* Center the text when the image is on top */
+    order: 2; /* This places the content below the image */
 }
 
 .hero-img:hover {
@@ -513,12 +514,8 @@ body {
     font-family: var(--ff-saira-stencil-one), sans-serif;
     font-size: var(--fs-3);
     font-weight: var(--fw-700);
-    color: var(--color-secondary);
-    margin-bottom: 20px;
-}
-
-body.dark_theme .hero-title {
     color: var(--color-primary);
+    margin-bottom: 20px;
 }
 
 .hero-text {
@@ -713,7 +710,7 @@ body.dark_theme .btn-primary {
 
 .about .section-content {
   font-size: 1.1rem; /* Increased font size */
-  line-height: 1.8; /* Increased line spacing */
+  line-height: 2.0; /* Increased line spacing */
 }
 
 .about .btn-group {
