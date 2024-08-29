@@ -706,7 +706,7 @@ main { overflow-x: hidden; }
 
 .section-subtitle {
   font-size: var(--fs-5);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
@@ -729,28 +729,38 @@ main { overflow-x: hidden; }
 }
 
 .experience-title {
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   color: var(--color-primary);
   margin-bottom: 10px;
-  color: var(--color-primary);
 }
 
 .experience-meta {
-  font-size: var(--fs-5);
-  color: var(--color-secondary);
-  font-weight: var(--fw-700);
-  margin-bottom: 10px;
+  font-size: var(--fs-4);
+  color: var(--color-text);
+  margin-bottom: 15px;
 }
 
 .experience-duties {
-  list-style-type: disc;
-  color: var(--color-secondary);
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .experience-duties li {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   line-height: 1.6;
+  text-align: justify;
+  padding-left: 25px;
+  position: relative;
+  color: var(--color-text);
+}
+
+.experience-duties li::before {
+  content: "\2022";
+  color: var(--color-primary);
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 @media (max-width: 768px) {
@@ -759,11 +769,11 @@ main { overflow-x: hidden; }
   }
 
   .experience-title {
-    font-size: var(--fs-5);
+    font-size: var(--fs-4);
   }
 
   .experience-meta {
-    font-size: var(--fs-7);
+    font-size: var(--fs-5);
   }
 }
 
