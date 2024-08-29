@@ -745,7 +745,7 @@ main { overflow-x: hidden; }
 .experience-duties {
   list-style-type: disc;
   padding-left: 20px;
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 
 .experience-duties li {
