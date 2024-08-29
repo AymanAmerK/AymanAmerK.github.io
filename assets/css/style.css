@@ -505,7 +505,7 @@ body {
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--black);
+    color: var(--color-primary);
     margin-bottom: 20px;
 }
 .hero-text {
@@ -542,17 +542,7 @@ body {
 .hero-social-link:hover {
     color: var(--raw-seinna);
 }
-.scroll-down {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-}
+:is(.hero-social-list, .scroll-down) { display: none; }
 .scroll-down::after {
     content: '↓';
     font-size: 1.2rem;
