@@ -704,7 +704,7 @@ body.light_theme .btn-primary {
 
 .about .section-content {
   font-size: 1.1rem; /* Increased font size */
-  line-height: 2.5; /* Increased line spacing */
+  line-height: 1.5; /* Increased line spacing */
 }
 
 .about .btn-group {
@@ -718,7 +718,8 @@ body.light_theme .btn-primary {
 
 
 .about .section-text {
-  margin-bottom: 30px; /* Added margin below the text */
+  margin-bottom: 30px;
+  line-height: 1.8;/* Added margin below the text */
 }
 
 
@@ -940,7 +941,7 @@ body.light_theme .btn-primary {
   color: var(--color-primary);
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 2.5;
 }
 
 .project-grid {
