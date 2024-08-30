@@ -109,7 +109,7 @@ body.light_theme {
 \*-----------------------------------*/
 
 *, *::before, *::after {
-  margin: 0;
+  margin: 1;
   padding: 0;
   box-sizing: border-box;
 }
@@ -833,7 +833,7 @@ body.light_theme .btn-primary {
 }
 
 .section-title {
-  font-size: var(--fs-3);
+  font-size: var(--fs-2);
   margin-bottom: 40px;
 }
 
@@ -851,7 +851,7 @@ body.light_theme .btn-primary {
 }
 
 .experience-title {
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   color: var(--color-primary);
   margin-bottom: 10px;
   padding-left: 10px;
@@ -859,7 +859,7 @@ body.light_theme .btn-primary {
 }
 
 .experience-meta {
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   color: var(--color-secondary);
   margin-bottom: 15px;
   padding-left: 10px;
