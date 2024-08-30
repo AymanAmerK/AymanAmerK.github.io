@@ -15,16 +15,15 @@
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
-
-  --raw-seinna: hsl(24, 74%, 58%);
-  --sizzling-sunrise: hsl(51, 95%, 54%);
-  --scarlet: hsl(13, 96%, 47%);
+  --primary-blue: #224279;
+  --secondary-blue: #3166a1;
+  --light-blue: #418ac9;
+  --lightest-blue: #51aff1;
+  --white: #fcfcfc;
   --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
 
   /**
    * typography
@@ -73,31 +72,24 @@
 /*-----------------------------------*\
  * #THEME COLORS
 \*-----------------------------------*/
-
 body.dark_theme {
-
-  --bg-primary: hsl(0, 0%, 12%);
-  --bg-secondary: hsl(0, 0%, 19%);
-  --color-primary: hsl(0, 0%, 100%);
-  --color-secondary: hsl(0, 0%, 62%);
+  --bg-primary: var(--primary-blue);
+  --bg-secondary: var(--secondary-blue);
+  --color-primary: var(--white);
+  --color-secondary: var(--lightest-blue);
   --card-shadow: hsla(0, 0%, 0%, 0.4);
-  --input-bg: hsl(0, 0%, 16%);
-
+  --input-bg: var(--secondary-blue);
   --shadow-1: 10px 10px 40px var(--card-shadow);
-
 }
 
 body.light_theme {
-
-  --bg-primary: hsl(0, 0%, 90%);
-  --bg-secondary: hsl(0, 0%, 100%);
-  --color-primary: hsl(0, 0%, 12%);
-  --color-secondary: hsl(0, 0%, 37%);
+  --bg-primary: var(--lightest-blue);
+  --bg-secondary: var(--white);
+  --color-primary: var(--primary-blue);
+  --color-secondary: var(--secondary-blue);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
-  --input-bg: hsl(0, 0%, 93%);
-
+  --input-bg: var(--light-blue);
   --shadow-1: 10px 10px 40px var(--card-shadow);
-
 }
 
 
@@ -147,7 +139,7 @@ textarea { width: 100%; }
 ion-icon { pointer-events: none; }
 
 :is(a, button, select) {
-  outline-color: var(--scarlet);
+  outline-color: var(--light-blue);
   outline-offset: 3px;
 }
 
@@ -220,12 +212,12 @@ body.active { overflow: hidden; }
 }
 
 .btn-secondary {
-  background: var(--raw-seinna);
-  border-color: var(--raw-seinna);
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
   color: var(--black);
 }
 
-.btn-secondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
+.btn-secondary:is(:hover, :focus) { --primary-blue: hsl(24, 74%, 64%); }
 
 .section-subtitle {
   position: relative;
@@ -259,7 +251,7 @@ body.active { overflow: hidden; }
 .tooltip {
   position: absolute;
   top: -40px;
-  background: var(--raw-seinna);
+  background: var(--primary-blue);
   min-width: max-content;
   color: var(--white);
   font-size: 15px;
@@ -318,7 +310,7 @@ body.active { overflow: hidden; }
 
 .logo span {
   display: inline-block;
-  color: var(--raw-seinna);
+  color: var(--primary-blue);
   margin-left: 2px;
 }
 
@@ -361,7 +353,7 @@ body.active { overflow: hidden; }
 
 .theme-btn.active .icon {
   left: 20px;
-  box-shadow: inset 20px -20px var(--sizzling-sunrise);
+  box-shadow: inset 20px -20px var(--secondary-blue);
 }
 
 .nav-toggle-btn {
@@ -446,7 +438,7 @@ body.active { overflow: hidden; }
   left: 0;
   height: 5px;
   width: 0;
-  background: var(--raw-seinna);
+  background: var(--primary-blue);
   transition: var(--transition-1);
 }
 
@@ -497,7 +489,7 @@ body.active { overflow: hidden; }
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
-    background-color: var(--raw-seinna);
+    background-color: var(--primary-blue);
     color: var(--white);
     text-decoration: none;
     border-radius: var(--radius-4);
@@ -505,7 +497,7 @@ body.active { overflow: hidden; }
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-primary:hover {
-    background-color: var(--scarlet);
+    background-color: var(--light-blue);
 }
 .hero-social-list {
     list-style: none;
@@ -521,7 +513,7 @@ body.active { overflow: hidden; }
     transition: color 0.3s ease;
 }
 .hero-social-link:hover {
-    color: var(--raw-seinna);
+    color: var(--primary-blue);
 }
 .hero-image {
     width: 100%;
@@ -651,7 +643,7 @@ body.light_theme .btn-primary {
 }
 
 .stats-card .card-icon {
-  background: var(--raw-seinna);
+  background: var(--primary-blue);
   width: 60px;
   height: 60px;
   display: grid;
@@ -666,7 +658,7 @@ body.light_theme .btn-primary {
 
 .stats-card .card-title {
   width: calc(100% - 95px);
-  color: var(--raw-seinna);
+  color: var(--primary-blue);
   text-align: center;
   font-size: 2.5rem; /* Increased font size for the numbers */
   line-height: 1;
@@ -756,7 +748,7 @@ body.light_theme .btn-primary {
   left: 5px;
   bottom: 5px;
   width: 93px;
-  background: var(--raw-seinna);
+  background: var(--primary-blue);
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
@@ -1060,7 +1052,7 @@ body.light_theme .btn-primary {
 }
 
 .contact-social-link:is(:hover, :focus) {
-  background: var(--raw-seinna);
+  background: var(--primary-blue);
   color: var(--white);
 }
 
@@ -1090,7 +1082,7 @@ body.light_theme .btn-primary {
 
 .input-field {
   background: var(--input-bg);
-  color: var(--raw-seinna);
+  color: var(--primary-blue);
   padding: 10px;
   padding-left: 40px;
   border-radius: var(--radius-12);
@@ -1115,7 +1107,7 @@ textarea.input-field {
 
 .input-field:focus { outline: 1px solid; }
 
-.input-field:focus + ion-icon { color: var(--raw-seinna); }
+.input-field:focus + ion-icon { color: var(--primary-blue); }
 
 .contact .btn-primary {
   max-width: unset;
@@ -1148,7 +1140,7 @@ textarea.input-field {
 
 .copyright a {
   display: inline-block;
-  color: var(--raw-seinna);
+  color: var(--primary-blue);
 }
 
 
