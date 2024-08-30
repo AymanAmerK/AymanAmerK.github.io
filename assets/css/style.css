@@ -719,7 +719,7 @@ body.light_theme .btn-primary {
 
 .about .section-text {
   margin-bottom: 30px;
-  line-height: 1.8;/* Added margin below the text */
+  line-height: 2.5;/* Added margin below the text */
 }
 
 
@@ -835,6 +835,7 @@ body.light_theme .btn-primary {
 .section-title {
   font-size: var(--fs-3);
   margin-bottom: 40px;
+  line-height: 2.5;
 }
 
 .experience-list {
