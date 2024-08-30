@@ -630,7 +630,7 @@ body.light_theme .btn-primary {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
