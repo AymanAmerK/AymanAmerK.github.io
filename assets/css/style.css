@@ -591,7 +591,11 @@ body.active { overflow: hidden; }
 /* Media queries for small screens */
 @media (max-width: 991px) {
     .hero {
-        padding: 10px;
+        padding: 5px;
+    }
+    .hero-container {
+        margin: 5px;
+        padding: 0 5px;
     }
     .hero-title {
         font-size: var(--fs-3);
@@ -599,10 +603,11 @@ body.active { overflow: hidden; }
     .hero-text {
         font-size: var(--fs-6);
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
     .hero-content {
         max-width: 100%;
+        padding: 0;
     }
 }
 /* Light theme specific styles */
@@ -699,7 +704,7 @@ body.light_theme .btn-primary {
 
 .about .section-content {
   font-size: 1.1rem; /* Increased font size */
-  line-height: 2.0; /* Increased line spacing */
+  line-height: 2.5; /* Increased line spacing */
 }
 
 .about .btn-group {
