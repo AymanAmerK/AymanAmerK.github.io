@@ -252,7 +252,7 @@ body.active { overflow: hidden; }
 
 .section-text {
   color: var(--color-secondary);
-  line-height: 1.8;
+  line-height: 2.5;
   margin-bottom: 30px;
 }
 
@@ -492,7 +492,7 @@ body.active { overflow: hidden; }
     font-size: var(--fs-5);
     color: var(--color-secondary);
     margin-bottom: 30px;
-    line-height: 1.8;
+    line-height: 2.0;
 }
 .btn-primary {
     display: inline-block;
@@ -719,7 +719,7 @@ body.light_theme .btn-primary {
 
 .about .section-text {
   margin-bottom: 30px;
-  line-height: 1.8;/* Added margin below the text */
+  line-height: 2.5;/* Added margin below the text */
 }
 
 
@@ -833,7 +833,7 @@ body.light_theme .btn-primary {
 }
 
 .section-title {
-  font-size: var(--fs-3);
+  font-size: var(--fs-2);
   margin-bottom: 40px;
 }
 
@@ -851,7 +851,7 @@ body.light_theme .btn-primary {
 }
 
 .experience-title {
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   color: var(--color-primary);
   margin-bottom: 10px;
   padding-left: 10px;
@@ -859,7 +859,7 @@ body.light_theme .btn-primary {
 }
 
 .experience-meta {
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   color: var(--color-secondary);
   margin-bottom: 15px;
   padding-left: 10px;
@@ -892,15 +892,15 @@ body.light_theme .btn-primary {
 
 @media (max-width: 768px) {
   .experience-item {
-    padding: 30px;
+    padding: 20px;
   }
 
   .experience-title {
-    font-size: var(--fs-5);
+    font-size: var(--fs-4);
   }
 
   .experience-meta {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
   }
 }
 
@@ -1533,9 +1533,6 @@ textarea.input-field {
 }
 
 .hero-content {
-  flex: 0 0 55%;
-  max-width: 55%;
+  flex: 0 0 85%;
+  max-width: 85%;
 }
-
-
-
