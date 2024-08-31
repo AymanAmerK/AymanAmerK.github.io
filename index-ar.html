@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أيمن عامر - الملف الشخصي</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/rtl-style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">أيمن عامر<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang" onchange="changeLanguage()">
+          <option value="ar">Ar</option>
+          <option value="en">En</option>
+        </select>
+
+        <button class="theme-btn" aria-label="تغيير المظهر" title="تغيير المظهر" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="تبديل القائمة" title="تبديل القائمة" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">الرئيسية.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">نبذة عني.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">المهارات.</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="navbar-link">الخبرات.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">المشاريع.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">تواصل معي.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article class="container">
+
+      <!-- 
+  - #HERO
+-->
+
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <!-- Content Section -->
+          <div class="hero-content">
+            <h1 class="hero-title">خبير في إدارة الأعمال وتحليل البيانات</h1>
+            <p class="hero-text">
+              أقود النجاح من خلال اتخاذ القرارات المدروسة والرؤى الاستراتيجية. بخبرتي في إدارة الأعمال وتحليل البيانات، أساعد المؤسسات على تحسين عملياتها وتحقيق النمو المستدام.
+            </p>
+            <a href="#contact" class="btn btn-primary">تواصل معي</a>
+            <ul class="hero-social-list">
+              <li>
+                <a href="https://www.linkedin.com/in/ayman-amerk" class="hero-social-link" aria-label="LinkedIn">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Aymanamerk" class="hero-social-link" aria-label="GitHub">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image Section -->
+          <div class="hero-image">
+            <img src="./assets/images/hero-banner.png" alt="أيمن عامر" class="hero-img">
+          </div>
+        </div>
+        <a href="#stats" class="scroll-down">تمرير</a>
+      </section>
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#experience" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="أيقونة الخبرة">
+              </div>
+              <h2 class="h2 card-title">
+                +2 <strong>سنوات من الخبرة</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="أيقونة المشاريع">
+              </div>
+              <h2 class="h2 card-title">
+                +14 <strong>مشروع مكتمل</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="أيمن عامر" class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">نبذة عني</p>
+
+          <h2 class="h3 section-title">محترف متفاني وتحليلي</h2>
+
+          <p class="section-text">
+            مرحبًا! أنا أيمن عامر، شخص متعدد المواهب بخلفية قوية في الإدارة وتحليل البيانات وعلم النفس. أتابع حاليًا دراسة الماجستير في الإدارة بمعدل تراكمي 3.82، وقد تخرجت الأول على دفعتي بمرتبة الشرف في الإدارة، مع تخصص فرعي في علم النفس من جامعة ابن خلدون في إسطنبول (معدل تراكمي: 3.79).
+
+            أنا شغوف بتوسيع خبرتي العملية والنظرية في مجال الأعمال وتحليل البيانات. بدافعي وخلفيتي المتنوعة ومجموعة المهارات متعددة التخصصات، أنا ملتزم بتطوير قدراتي في استخدام الأساليب التحليلية لحل التحديات التجارية المعقدة.
+          </p>
+
+          <div class="btn-group">
+            <a href="./assets/documents/Ayman_Amer_CV.pdf" class="btn btn-primary" download>تحميل السيرة الذاتية</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">مهاراتي</p>
+
+          <h2 class="h3 section-title">خبرة في تحليل البيانات وذكاء الأعمال</h2>
+
+          <p class="section-text">
+            أستخدم مجموعة متنوعة من الأدوات والتقنيات لتقديم رؤى مدعومة بالبيانات وحل التحديات التجارية المعقدة.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>المهارات</button>
+            <button class="toggle-btn" data-toggle-btn>الأدوات</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SQL</div>
+                <div class="card-icon">
+                  <img src="./assets/images/sql.png" alt="شعار SQL">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+                <div class="card-icon">
+                  <img src="./assets/images/python.png" alt="شعار Python">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Excel</div>
+                <div class="card-icon">
+                  <img src="./assets/images/excel.png" alt="شعار Excel">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">KNIME</div>
+                <div class="card-icon">
+                  <img src="./assets/images/knime.png" alt="شعار KNIME">
+                </div>
+              </div>
+            </li>
+
+            <!-- Add more skills as needed -->
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Tableau</div>
+                <div class="card-icon">
+                  <img src="./assets/images/tableau.png" alt="شعار Tableau">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Power BI</div>
+                <div class="card-icon">
+                  <img src="./assets/images/powerbi.png" alt="شعار Power BI">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SAS Viya</div>
+                <div class="card-icon">
+                  <img src="./assets/images/sas-viya.png" alt="شعار SAS Viya">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Salesforce</div>
+                <div class="card-icon">
+                  <img src="./assets/images/salesforce.png" alt="شعار Salesforce">
+                </div>
+              </div>
+            </li>
+
+            <!-- Add more tools as needed -->
+
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="experience-content section-content">
+          <p class="section-subtitle">خبراتي</p>
+          <h3 class="h3 section-title">المسيرة المهنية</h3>
+          <ul class="experience-list">
+            <li class="experience-item">
+              <h4 class="h4 experience-title">محلل ذكاء أعمال</h4>
+              <p class="experience-meta">ProficienC Solutions، تورونتو، كندا | أغسطس 2022 - الحاضر (دوام جزئي)</p>
+              <ul class="experience-duties">
+                <li>ساعدت في تطوير نماذج أولية للعملاء، موضحًا فعالية حلول ذكاء الأعمال المصممة لتلبية احتياجاتهم.</li>
+                <li>أجريت مشاريع تحليل البيانات، مقدمًا رؤى لاستراتيجيات مستنيرة وصنع القرار الداخلي.</li>
+                <li>دعمت إنشاء وصيانة وثائق شاملة للعمليات التجارية، مضمنًا الوضوح والاتساق.</li>
+              </ul>
+            </li>
+            <li class="experience-item">
+              <h4 class="h4 experience-title">مساعد باحث</h4>
+              <p class="experience-meta">جامعة ابن خلدون، إسطنبول، تركيا | سبتمبر 2023 - يونيو 2024</p>
+              <ul class="experience-duties">
+                <li>راجعت الأدبيات الأكاديمية والمنشورات لتوليف البحوث والنظريات ذات الصلة للمشاريع المخصصة.</li>
+                <li>جمعت وحللت البيانات من مصادر متنوعة لدعم أهداف المشروع.</li>
+                <li>صغت ملخصات وتقارير شاملة لتوثيق إجراءات البحث وتوصيل النتائج إلى أصحاب المصلحة.</li>
+              </ul>
+            </li>
+            <li class="experience-item">
+              <h4 class="h4 experience-title">أخصائي مبيعات التصدير</h4>
+              <p class="experience-meta">Abyss، إسطنبول، تركيا | مايو 2023 - يناير 2024</p>
+              <ul class="experience-duties">
+                <li>أجريت أبحاث السوق لتحديد الأسواق الدولية المحتملة وفرص التوسع.</li>
+                <li>بنيت وحافظت على علاقات قوية مع العملاء الدوليين.</li>
+                <li>حللت اتجاهات السوق واستراتيجيات المنافسين لإرشاد استراتيجيات المبيعات.</li>
+              </ul>
+            </li>
+            <li class="experience-item">
+              <h4 class="h4 experience-title">متدرب في تطوير الأعمال</h4>
+              <p class="experience-meta">MetalMaker 3D، كراكوف، بولندا (عن بعد) | أبريل 2023 - يونيو 2023</p>
+              <ul class="experience-duties">
+                <li>بحثت في الأسواق المستهدفة وحددت ملفات العملاء لدعم مبادرات تطوير الأعمال.</li>
+                <li>ولدت فرص البيع من خلال العثور على معلومات الأعمال والموظفين ذوي الصلة.</li>
+                <li>أدرت إدخال البيانات في جداول البيانات لتتوافق مع متطلبات استيراد العملاء المحتملين لنظام إدارة علاقات العملاء.</li>
+              </ul>
+            </li>
+            <li class="experience-item">
+              <h4 class="h4 experience-title">متعاقد مستقل</h4>
+              <p class="experience-meta">Appen، الولايات المتحدة (عن بعد) | يوليو 2021 - فبراير 2023</p>
+              <ul class="experience-duties">
+                <li>أجريت مجموعة واسعة من المهام الافتراضية للعديد من الشركات، بما في ذلك البحث على الإنترنت، والنسخ، والتحقق من البيانات، ومراجعة المواقع.</li>
+                <li>أظهرت خبرة في استخدام المنصات السحابية والأدوات الديناميكية لإكمال المهام المسندة بكفاءة.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="project" id="portfolio">
+        <div class="project-content section-content">
+          <p class="section-subtitle">مشاريعي</p>
+          <h2 class="h3 section-title">عرض الحلول المدفوعة بالبيانات</h2>
+          <p class="section-text">
+            فيما يلي بعض مشاريعي الأخيرة التي توضح مهاراتي في تحليل البيانات وذكاء الأعمال.
+          </p>
+        </div>
+        
+        <div class="project-grid">
+          <a href="https://github.com/AymanAmerK/Housing-Prices-and-Turkiye" class="project-card" target="_blank" rel="noopener noreferrer">
+            <figure class="card-banner">
+              <img src="./assets/images/project-1.png" alt="تحليل اتجاهات الإسكان">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">تحليل اتجاهات الإسكان والإيجارات الدولية</h3>
+              <p class="card-description">تحليل أسعار المساكن والإيجارات عبر البلدان باستخدام بيانات منظمة التعاون الاقتصادي والتنمية من 1994-2023.</p>
+            </div>
+          </a>
+          
+          <a href="https://github.com/aymanamerk/injury-severity-prediction" class="project-card" target="_blank" rel="noopener noreferrer">
+            <figure class="card-banner">
+              <img src="./assets/images/project-2.png" alt="منصة العقارات">
+            </figure>
+            <div class="card-content">
+              <h3 class="h4 card-title">تحليل التنبؤ بشدة الإصابات</h3>
+              <p class="card-description">تحليل شامل باستخدام تقنيات التعلم الآلي للتنبؤ بشدة الإصابات في حوادث المركبات.</p>
+            </div>
+          </a>
+          
+          <!-- Add more project items as needed -->
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">تواصل معي</p>
+
+          <h2 class="h3 section-title">ابق على اتصال</h2>
+
+          <p class="section-text">
+            إذا كان لديك أي أسئلة أو ترغب في مناقشة فرص محتملة، فلا تتردد في التواصل معي.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">العنوان:</h3>
+                <address class="contact-info">
+                  باشاك ماه. أوردو كاد. رقم:3 ص.ب. 34480 باشاكشهير/إسطنبول
+                </address>
+              </div>
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">الهاتف:</h3>
+                <a href="tel:+905342041358" class="contact-info">+905342041358</a>
+              </div>
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">البريد الإلكتروني:</h3>
+                <a href="mailto:ayman_amer@ymail.com" class="contact-info">ayman_amer@ymail.com</a>
+              </div>
+            </li>
+
+            <li>
+              <ul class="contact-social-list">
+                <li>
+                  <a href="https://www.linkedin.com/in/ayman-amerk" class="contact-social-link">
+                    <div class="tooltip">LinkedIn</div>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Aymanamerk" class="contact-social-link">
+                    <div class="tooltip">GitHub</div>
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="process_form.php" method="POST" class="contact-form" id="contact-form">
+          <div class="form-wrapper">
+            <label for="name" class="form-label">الاسم</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required placeholder="مثال: محمد أحمد" class="input-field">
+              <ion-icon name="person-circle"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required placeholder="مثال: mohamed@mail.com" class="input-field">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="message" class="form-label">الرسالة</label>
+            <div class="input-wrapper">
+              <textarea name="message" id="message" required placeholder="اكتب رسالتك هنا..." class="input-field"></textarea>
+              <ion-icon name="chatbubbles"></ion-icon>
+            </div>
+          </div>
+        
+          <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+        
+        <div id="form-message"></div>
+        <script src="script.js"></script>
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          أيمن عامر<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 <a href="https://www.linkedin.com/in/ayman-amerk">أيمن عامر</a>. جميع الحقوق محفوظة
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="الانتقال إلى الأعلى">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+function changeLanguage() {
+  var language = document.getElementById("lang").value;
+  if (language === "ar") {
+    window.location.href = "index-ar.html";
+  } else {
+    window.location.href = "index.html";
+  }
+}
+</script>
+  
+</body>
+
+</html>
