@@ -42,7 +42,7 @@
 
       <div class="navbar-actions">
 
-        <select name="language" id="lang">
+        <select name="language" id="lang" onchange="changeLanguage()">
           <option value="en">En</option>
           <option value="ar">Ar</option>
         </select>
@@ -542,6 +542,17 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+  function changeLanguage() {
+    var language = document.getElementById("lang").value;
+    if (language === "ar") {
+      window.location.href = "index-ar.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  }
+  </script>
+  
 </body>
 
 </html>
